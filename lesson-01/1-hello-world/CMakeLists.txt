@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( 1-hello-world )
+
+BUILD_EXECUTABLE ()
