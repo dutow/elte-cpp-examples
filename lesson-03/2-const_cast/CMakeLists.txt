@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE (2-const_cast)
+
+BUILD_EXECUTABLE ()

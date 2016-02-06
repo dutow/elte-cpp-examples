@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( 1-my_strlen )
+
+BUILD_EXECUTABLE ()
