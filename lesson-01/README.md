@@ -14,7 +14,7 @@ Extra
 ---
 
  * e-tests: Pelda automatikusan ellenorzott tesztekre - itt talaljatok az opcionalis hazifeladatokat is.
- * e-graphical: Ugyanugy hello vilag, de ezt egy grafikus ablakban irja ki.
+ * g-hello-world: Ugyanugy hello vilag, de ezt egy grafikus ablakban irja ki.
 
 
 Ami meg elhangzik:
