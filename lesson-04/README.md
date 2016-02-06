@@ -6,16 +6,19 @@ Az ora anyaga
 ---
 
  * A `cat` megvalositasa: standard bemenet (whitespace manipulator!), operatorok.
- * Ertekado operator es referencia adattagok
- * Dinamikus memoriakezeles
- * Copy constructor, destruktor
+ * Racionalis szam osztaly
 
 
 Peldak
 ---
 
  * `1-cat`
- * `2-cat-class`
- * `3-reverse-cat-class`
+ * `2-rational-class`
 
 
+Extra
+---
+
+### `t-rational-tests`
+
+Tesztek es plusz funkcionalitas a racionalis szamok osztalyahoz.
