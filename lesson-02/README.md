@@ -40,5 +40,6 @@ Bemutatja a minimumkivalasztasos rendezes mukodeset vizualisan.
 Egy nagyon egyszeru aknakereso jatek.
 
  * (1) Idolimitalt jatek (kihasznalhatjatok, hogy 60FPS-el megy a fociklusunk!)
+ * (2) Gyozelem / vesztes lekezelese (kilepes, gratulacio, minden bomba megmutatasa, uj jatek... ?)
  * (2) Lehetoseg jeloles tetelere mezokre ("biztos vagyok benne, hogy ez bomba", "ez lehet, hogy bomba")
  * (3) Kattintaskor fedjen fel nagyobb teruletet, ha "biztonsagos" (nem bombak mellett levo) mezot valasztott a jatekos. (A kulcsszo: rekurzio)

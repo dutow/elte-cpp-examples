@@ -7,4 +7,5 @@ ADD_SUBDIRECTORY(3-fahrenheit-celsius-array)
 ADD_SUBDIRECTORY(4-array-strlen)
 
 ADD_SUBDIRECTORY(g-sort-visualiser)
+ADD_SUBDIRECTORY(g-minesweeper)
 
