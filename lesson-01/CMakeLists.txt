@@ -8,3 +8,4 @@ ADD_SUBDIRECTORY(3-sum-with-library)
 ADD_SUBDIRECTORY(t-simple-tests)
 
 ADD_SUBDIRECTORY(g-hello-world)
+ADD_SUBDIRECTORY(g-pong)

@@ -44,6 +44,8 @@ Lehet rajta sok kiserletet vegezni, pl. (a zarojeles szam a nehezsege, 1-3):
 
 A "pong" jatek egyszeru megvalositasa.
 
+ * (1) A jatek ne tartalmazzon rejtett falakat
+ * (1) A labda ne sulyledjen bele az utobe
  * (1) A jatek elforgatasa 90 fokkal
  * (2) A labda folyamatosan gyorsuljon
  * (2) Pontszamitas es kijelzes (segitseg: `std::to\_string`)
