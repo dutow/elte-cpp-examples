@@ -37,6 +37,7 @@ int main()
 	if(!font.loadFromFile("fonts/Roboto-Bold.ttf"))
 	{
 		std::cerr << "Nem talalhato a betutipus!" << std::endl;
+		return 1;
 	}
 
 	sf::Text text;
