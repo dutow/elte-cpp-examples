@@ -4,7 +4,7 @@
 
 inline double fahrenheit_to_celsius(double fahrenheit)
 {
-	return 5 * (fahrenheit - 32) / 9;
+  return 5 * (fahrenheit - 32) / 9;
 }
 
 int main(int argc, char* argv[])

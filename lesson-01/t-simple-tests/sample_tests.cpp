@@ -20,18 +20,18 @@ int sum_dividible_by_seven(int min, int max)
  */
 unsigned int floor_sqrt(unsigned int number)
 {
-	switch(number)
-	{
-		case 0: return 0;
-		case 1:
-		case 2:
-		case 3:
-			return 1;
-		default:
-		{
-			return 2; // TODO
-		}
-	}
+  switch(number)
+  {
+    case 0: return 0;
+    case 1:
+    case 2:
+    case 3:
+            return 1;
+    default:
+            {
+              return 2; // TODO
+            }
+  }
 }
 
 TEST(sum_dividible_by_seven, empty_interval_is_zero)
