@@ -29,9 +29,11 @@ Reszben jol megirt, reszben rad varo /hibas mertekegyseg konverziok.
 
 ### `g-sort-visualiser`
 
-Bemutatja a maximumkivalasztasos rendezes mukodeset vizualisan.
+Bemutatja a minimumkivalasztasos rendezes mukodeset vizualisan.
 
- * (1-3) Masfajta rendezoalgoritmus megvalositasa
+ * (1) A program ne lepjen ki, miutan lefutott a kereses, csak ha bezarjak az ablakot.
+ * (1) A csere muveletenek vizualizalasa valami mas szinnel (elotte-utana).
+ * (1-3) Masfajta rendezoalgoritmus megvalositasa.
 
 ### `g-minesweeper`
 
