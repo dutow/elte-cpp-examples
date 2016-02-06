@@ -9,3 +9,5 @@ ADD_SUBDIRECTORY(4-array-strlen)
 ADD_SUBDIRECTORY(g-sort-visualiser)
 ADD_SUBDIRECTORY(g-minesweeper)
 
+ADD_SUBDIRECTORY(t-conversions)
+
