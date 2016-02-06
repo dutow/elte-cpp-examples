@@ -54,27 +54,27 @@ TEST(sum_dividible_by_seven, just_14_21)
   EXPECT_EQ(35, sum_dividible_by_seven(14,21));
 }
 
-TEST(ceil_sqrt, zero_is_zero)
+TEST(floor_sqrt, zero_is_zero)
 {
-  EXPECT_EQ(0, ceil_sqrt(0));
+  EXPECT_EQ(0, floor_sqrt(0));
 }
 
-TEST(ceil_sqrt, one_is_one)
+TEST(floor_sqrt, one_is_one)
 {
-  EXPECT_EQ(1, ceil_sqrt(1));
+  EXPECT_EQ(1, floor_sqrt(1));
 }
 
-TEST(ceil_sqrt, with_16)
+TEST(floor_sqrt, with_16)
 {
-  EXPECT_EQ(4, ceil_sqrt(16));
+  EXPECT_EQ(4, floor_sqrt(16));
 }
 
-TEST(ceil_sqrt, with_26)
+TEST(floor_sqrt, with_26)
 {
-  EXPECT_EQ(5, ceil_sqrt(26));
+  EXPECT_EQ(5, floor_sqrt(26));
 }
 
-TEST(ceil_sqrt, with_35)
+TEST(floor_sqrt, with_35)
 {
-  EXPECT_EQ(5, ceil_sqrt(35));
+  EXPECT_EQ(5, floor_sqrt(35));
 }
