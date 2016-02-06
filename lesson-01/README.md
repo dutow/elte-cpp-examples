@@ -13,8 +13,23 @@ Az ora anyaga
 Extra
 ---
 
- * e-tests: Pelda automatikusan ellenorzott tesztekre - itt talaljatok az opcionalis hazifeladatokat is.
- * g-hello-world: Ugyanugy hello vilag, de ezt egy grafikus ablakban irja ki.
+### t-sample-tests
+
+Pelda automatikus tesztekre.
+
+Egyben egy kis opcionalis hazifeladat is, mivel par teszt hibat jelez.
+
+
+### g-hello-world
+
+Grafikus hello vilag, forog is.
+
+Lehet rajta sok kiserletet vegezni, pl. (a zarojeles szam a nehezsege, 1-3):
+
+ * (1) ne forogjon, hanem mindig 45 fokos szogben jelenitse meg a feliratot
+ * (1) a bin konyvtarbol allva lehessen elinditani a programot, ne egyel kivulrol
+ * (2) A kozeppontja korul forogjon a szoveg
+ * (3) Mozogjon a felirat balra-jobbra, a kepernyon belul
 
 
 Ami meg elhangzik:
