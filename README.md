@@ -3,81 +3,129 @@ elte-cpp-examples
 
 Ez a repository az ELTE IK programtervezo informatikus Bsc C++ programozas gyakorlatahoz tartalmaz peldakat.
 
-Az egyes orak anyagai a lesson\_X konyvtarakban talalhatoak. Mindegyik konyvtarban talalhato egy ujabb README, ami az adott ora tomor vazlatat tartalmazza.
+Az egyes orak anyagai a lesson-XX konyvtarakban talalhatoak. Mindegyik konyvtarban talalhato egy ujabb README, ami az adott ora tomor vazlatat tartalmazza.
+
+Ennek az anyagnak NEM az a celja, hogy teljesen onalloan is megtanuld az anyagot, hanem az, hogy az orakra bejarok kapjanak egy plusz segitseget a C++/programozas megerteseben, elsajatitasaban.
+
+Ennek megfeleloen reszletes magyarazatokat nem tartalmaz, ugyanakkor aki csak 1-1 orarol hianyzik, kedvenc internetes keresoje segitsegevel a peldaprogramok alapjan viszonylag konnyen tud boldogulni.
 
 
 Elokeszites
----
+-----
 
 Az anyag nagy resze C++-ban keszult programokbol all. 
 
-Az oran bemutatottak nagy resze siman onmagaban, kezzel is fordithato, igy eleg odanavigalnod az adott konyvtarba, es kiadni az azt fordito parancsot. 
-Ezekhez elegendo az 1-3 lepesek vegrehajtasa, a rekurziv opciot a harmadikbol mar ki is hagyhatod.
+Az oran bemutatottak nagy resze siman onmagaban, kezzel is fordithato, igy eleg odanavigalnod az adott konyvtarba, es kiadni az azt fordito parancsot (felteve, hogy van egy C++ fordito a gepeden). 
 
-Amennyiben azonban az erdekesebb (grafikus, automatikus teszteket futtato, extra dolgokat is bemutato) reszeket is szeretned hasznalni, ahhoz szukseg van kulso konyvtarakra is, anelkul nem fognak fordulni. Ezek a peldak *teljesen* opcionalisak,
-segithetnek a tanulasban / es talan fenntartani az erdeklodesedet, de nem kepezik a mindenkeppen szukseges tananyag reszet.
+Peldaul:
 
-1. Szukseged lesz C++ forditora, git kliensre, valamint CMake-re. 
-   Linuxon: apt-get install git clang cmake build-essential libbz2-dev
-   Windowson: manualisan letolthetoek es telepithetoek. Git kliensnek a SourceTree kivalo, ha GUI-t szeretnel.
-2. A tanulast igencsak megkonnyiti egy *jo* fejleszoi kornyezet. A hangsuly a jon van.
-   Ajanlom: https://www.jetbrains.com/clion/ (diakoknak ingyenes)  
-   Windowson a Visual Studio Community is tokeletes (akkor clang sem kell, fordito is van benne)
-3. Klonozd rekurzivan a projektet:
-   git clone --recursive ...
-   (ez nemi idot fog igenyelni, igyal egy kavet)
-4. Fordits le a fuggosegeket (ez nemi idot fog igenyelni, igyal egy kavet)
-   ./bootstrap.sh (vagy .bat, ha ragaszkodsz a Windowshoz)
-5. Nyisd meg a projektet az IDE-dben. Clionnal ez egyszeruen a konyvtar kivalasztasat jelenti, Visual Studiohoz pedig:
-   cmake .
-   Majd a keletkezett .sln fajl megnyitasa.
-6. Forditsd es futtasd!
+```bash
+cd lesson-01/1-hello-world
+g++ main.cpp -o hello-vilag
+./hello-vilag
+```
+
+Emellett azonban tartalmaz extra peldakat, amikhez kulso konyvtarak is kellenek - amennyiben szeretned azokat hasznalni, ahhoz elobb be kell szerezned oket. Ehhez is vannak scriptek, amik vegrehajtjak.
 
 
-Hogyan hasznald
----
+### Szukseges szoftverek
 
-A projekt orakra van bontva, azon belul is altalaban talaltok:
+#### Ubuntu
 
-* Mindenfele peldat, amit vagy megmutatok oran, vagy extra
-* Egy grafikus peldat (extra, otthonra, jatszani vele)
-* Egy GTest-es peldat, amiben opcionalis hazifeladatokat talaltok
+Futtasd az `ubuntu_dependencies.sh` shell scriptet (nyugodtan nezd meg a tartalmat, csak `apt-get install` hivasokat tartalmaz), ez fel fog tenni neked minden szukseges csomagot: clang (fordito), cmake (segit leforditani mindent egyszerre), git (a letolteshez, frissiteshez), illetve a kulso konyvtarak altal igenyelt fuggosegek. 
 
-h3. Parancssor
+A fajlban vannak kommentek, mi miert kell.
 
+#### Windows
+
+ * Szukseged lesz egy git kliensre. A SourceTree, valamint a GitExtensions is nagyon jo.
+ * Szukseged lesz egy forditora is. Legegyszerubb a Visual Studio Community feltetele (vagy dreamspark-rol Professional), de a clang telepitese sem *sokkal* bonyolultabb
+ * Szukseged lesz a CMake-re is, amennyiben szeretned az extra peldakat is futtatni.
+
+
+### Fejlesztokornyezet
+
+Ugyan egy paranccsor es egy szovegszerkeszto is elegendo (es javaslom, hasznald ugy is a peldakat, nem art a tapasztalat!), egy jo fejlesztoi kornyezet igen sokat segit, foleg hibakereseskor.
+
+Ime par lehetoseg:
+
+ * Visual Studio (Windows alatt, valoszinuleg fel is tetted az elozo lepes kereteben)
+ * Clion (platformfuggetlen, diakoknak regisztracio utan ingyenes, jol egybeepul a CMake-el)
+ * KDevelop (linux)
+ * Eclipse CDT (platformguggetlen)
+
+
+### A peldak beszerzese
+
+Miutan a fuggosegeket feltetted, le tudod szedni ezt a git repository-t a sajat gepedre. Ez parancssorban a kovetkezo parancs:
+
+```bash
+git clone --recursive ...
+```
+
+Amennyiben egy grafikus eszkozt hasznalsz, eleg lesz az URL-t megadni.
+
+A rekurziv opcio csak akkor szukseges, ha az extrakat is szeretned. Amennyiben igen, nyugodtan menny el kavezni az elinditasa utan.
+
+
+### Opcionalis: forditsd le a kulso konyvtarakat
+
+Amennyiben szeretned az extrakat, szukseged van a boost (altalanos C++ osztalyok/fuggvenyek gyujtemenye) egy reszere, valamint az SFML nevu grafikus csomagra. Ezeket a pltaformodtol fuggoen a `boostrap.sh`, vagy `bootstrap.bat` futtatasaval tudod leforditani.
+
+Csak egyszer kell megtenned.
+
+
+### Opcionalis: forditsd le a peldakat (csak amennyiben az extrakat is szeretened)
+
+Amennyiben olyan fejlesztoi kornyezetet hasznalsz, ami tamogatja a CMake-t, a legegyszerubb, ha megnyitod a projekt konyvtarat benne, majd megnyomod a forditas gombot.
+
+Amennyiben Visual Studio-t / Eclipse-t hasznalsz, a CMake tud generalni neked projekt fajlokat, peldaul:
+
+```bash
+cmake .. -G "Visual Studio 10 Win64"
+```
+
+Amennyiben parancssorbol szeretnel forditani:
+
+```bash
 cmake .
-cmake --build
+cmake --build .
+```
 
-Ezzel leforditottal mindent, es a binaris fajlok a bin konyvtarba masolodtak, onnan tudod futtatni oket.
-
-h3. Clion
-
-h3. Visual Studio
+A generalast minden esetben csak egyszer kell megtenned, utana a valtozasokat automatikusan eszre fogja venni - azaz peldaul paranccsorbol a kesobbiekben elegendo a masodik parancsot tobbszor kiadnod.
 
 
-Hazik megoldasa
+Frissites
 ---
-TODO
+
+A felev kozben a repository tartalma frissulni fog. Hogy mindig megkapjad a legfrissebb valtoztatasokat, frissitened kell a lokalis masolatodat. Ez parancssorbol:
+
+```bash
+git pull
+```
+
+Majd forditsd ujra a peldakat.
 
 
-Ha szeretned te is verziokovetni
+Hogyan piszkalj bele
 ---
+
+Amennyiben csak lokalisan szeretnel modositasokat vegezni, ez igy teljesen jo is - modosits a fajlokon, forditsd le oket, probalkozz.
+
+Amennyiben szeretned masokkal is megosztani a megoldasaidat, vagy nekem interneten at kerdest feltenni egy a peldakkal kapcsolatos problemaddal:
 
 * Regisztralj Githubra
 * Nyomd meg a Fork gombot, maris van egy peldanyod, amit szabadon modosithatsz!
-* Olvass a gitrol
+* Olvass a gitrol (commit es push fog leginkabb erdekelni)
 
 
 Kerdesed van?
 ---
 
-Amennyiben kerdesed van, annak kivalo helye az ora. (Kiveve, amennyiben kulsos vagy es csak idetevedtel, akkor irj emailt!)
+Amennyiben kerdesed, problemad van:
 
-* Kerdeseket gyakorlat elott vagy utan tudsz feltenni
-* Az elozo harom ora anyagaval kapcsolatban
+ * A github egy kivalo eszkoz erre. Fork, modosit, feltesz, emailt ir.
+ * Amennyiben jarsz az oramra, elotte vagy utana nyugodtan kerdezz.
+ * Az anyag fo celja a folyamatos tanulas segitese. Lehetoleg probalj maximum harom het elmaradassal kerdezni!
 
-Elerhetoseg
----
-
- * E-mail: zsolt.parragi@cancellar.hu
 
