@@ -18,7 +18,7 @@ int sum_dividible_by_seven(int min, int max)
 /**
  * Visszaadja a parameterkent megadott szam gyokenel kisebb vagy egyenlo legnagyobb egesz szamot
  */
-unsigned int ceil_sqrt(unsigned int number)
+unsigned int floor_sqrt(unsigned int number)
 {
 	switch(number)
 	{
