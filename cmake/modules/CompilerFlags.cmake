@@ -1,7 +1,7 @@
 # Basic compiler flags: warning levels, treat warnings as errors, c++11
 
 IF ((CMAKE_COMPILER_IS_GNUCXX) OR ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang"))
-  SET (CMAKE_CXX_FLAGS "-std=c++14 -Wall -Werror -pedantic")
+  SET (CMAKE_CXX_FLAGS "-std=c++14 -Wall -pedantic")
 ENDIF ()
 
 IF (MSVC)
