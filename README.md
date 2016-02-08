@@ -53,6 +53,7 @@ Ime par lehetoseg:
  * Clion (platformfuggetlen, diakoknak regisztracio utan ingyenes, jol egybeepul a CMake-el)
  * KDevelop (linux)
  * Eclipse CDT (platformguggetlen)
+ * Code::Blocks (platformguggetlen)
 
 
 ### A peldak beszerzese
