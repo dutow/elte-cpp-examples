@@ -133,4 +133,6 @@ Hasznos linkek
 ---
 
  * [Online C++ Reference](http://en.cppreference.com/w/)
+ * [C++ FAQ](https://isocpp.org/faq)
+ * [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines)
  * [Awesome C++](https://github.com/fffaraz/awesome-cpp) - A curated list of awesome C/C++ frameworks, libraries, resources, and shiny things
