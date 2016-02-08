@@ -22,6 +22,12 @@ Peldak
 Extra
 ---
 
+### `d-bad-loop`
+
+Hibakeresesi pelda, a program nem ugy mukodik, ahogy azt elvarnank tole.
+
+Egyben egy kis opcionalis hazifeladat is, mivel par teszt hibat jelez.
+
 ### `t-sample-tests`
 
 Pelda automatikus tesztekre.

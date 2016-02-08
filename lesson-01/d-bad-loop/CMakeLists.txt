@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( d-bad-loop )
+
+BUILD_EXECUTABLE ()
