@@ -3,7 +3,7 @@ CURR_DIR=`pwd`
 
 # boost
 cd vendor/boost
-./bootstrap.sh --with-toolset=clang
+./bootstrap.sh --with-toolset=clang --with-libraries=filesystem,system
 ./b2 link=static
 
 cd $CURR_DIR
