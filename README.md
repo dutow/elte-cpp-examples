@@ -65,7 +65,7 @@ git clone --recursive https://github.com/dutow/elte-cpp-examples.git
 
 Amennyiben egy grafikus eszkozt hasznalsz, eleg lesz az URL-t megadni.
 
-A rekurziv opcio csak akkor szukseges, ha az extrakat is szeretned. Amennyiben igen, nyugodtan menny el kavezni az elinditasa utan.
+A rekurziv opcio csak akkor szukseges, ha az extrakat is szeretned. Amennyiben igen, nyugodtan menj el kavezni az elinditasa utan.
 
 
 ### Opcionalis: forditsd le a kulso konyvtarakat
