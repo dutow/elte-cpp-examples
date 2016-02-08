@@ -60,7 +60,7 @@ Ime par lehetoseg:
 Miutan a fuggosegeket feltetted, le tudod szedni ezt a git repository-t a sajat gepedre. Ez parancssorban a kovetkezo parancs:
 
 ```bash
-git clone --recursive ...
+git clone --recursive https://github.com/dutow/elte-cpp-examples.git
 ```
 
 Amennyiben egy grafikus eszkozt hasznalsz, eleg lesz az URL-t megadni.
@@ -129,3 +129,8 @@ Amennyiben kerdesed, problemad van:
  * Az anyag fo celja a folyamatos tanulas segitese. Lehetoleg probalj maximum harom het elmaradassal kerdezni!
 
 
+Hasznos linkek
+---
+
+ * [Online C++ Reference](http://en.cppreference.com/w/)
+ * [Awesome C++](https://github.com/fffaraz/awesome-cpp) - A curated list of awesome C/C++ frameworks, libraries, resources, and shiny things
