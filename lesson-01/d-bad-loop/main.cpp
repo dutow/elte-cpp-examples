@@ -7,7 +7,6 @@ int main(int argc, char* argv[])
 
   int i = 5;
 
-  #pragma warning disable -Wparentheses
   if ( i = 3 )
   {
     std::cout << "i erteke kisebb, mint harom!" << std::endl;
