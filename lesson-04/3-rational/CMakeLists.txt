@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( 2-rational )
+
+BUILD_EXECUTABLE ()

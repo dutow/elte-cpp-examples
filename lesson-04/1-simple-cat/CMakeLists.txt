@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( 1-simple-cat )
+
+BUILD_EXECUTABLE ()

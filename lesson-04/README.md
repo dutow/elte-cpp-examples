@@ -6,14 +6,15 @@ Az ora anyaga
 ---
 
  * A `cat` megvalositasa: standard bemenet (whitespace manipulator!), operatorok.
- * Racionalis szam osztaly
+ * Racionalis szam osztaly, sajat operatorok osztalyokon
 
 
 Peldak
 ---
 
- * `1-cat`
- * `2-rational-class`
+ * `1-simple-cat`
+ * `2-integer-bitshift`
+ * `3-rational`
 
 
 Extra
