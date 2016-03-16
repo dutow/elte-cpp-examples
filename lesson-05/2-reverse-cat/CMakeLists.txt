@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( 2-reverse-cat )
+
+BUILD_EXECUTABLE ()
