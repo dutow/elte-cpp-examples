@@ -3,6 +3,7 @@
 #include <vector>
 #include <list>
 #include <algorithm>
+#include <string>
 
 int main(int argc, char** argv)
 {
