@@ -17,25 +17,22 @@ INCLUDE( CompilerFlags )
 
 # boost
 SET(Boost_USE_STATIC_LIBS ON)
-SET(BOOST_INCLUDEDIR vendor/boost)
-SET(BOOST_LIBRARYDIR vendor/boost/stage/lib)
+SET ( BOOST_ROOT ${CMAKE_SOURCE_DIR}/vendor/boost-install/ )
 FIND_PACKAGE(Boost 1.60.0 REQUIRED)
 INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIR})
 
-# SFML
-SET(SFML_ROOT vendor/SFML)
-SET(SFML_STATIC_LIBRARIES TRUE)
-SET( CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/vendor/SFML/cmake/Modules ${CMAKE_MODULE_PATH} )
-INCLUDE( FindSFML )
-FIND_PACKAGE( SFML REQUIRED COMPONENTS graphics window system )
-INCLUDE_DIRECTORIES(${SFML_INCLUDE_DIR})
+
+ADD_DEFINITIONS( -DSFML_STATIC )
+set( gtest_force_shared_crt ON CACHE BOOL "Always use msvcrt.dll" FORCE )
+
+ADD_SUBDIRECTORY( vendor )
+INCLUDE_DIRECTORIES(vendor/SFML/include/)
+INCLUDE_DIRECTORIES(vendor/googletest/include/)
+SET( SFML_DEPENDENCIES sfml-graphics )
 
 # common assets
 INSTALL( DIRECTORY "assets/" DESTINATION "." )
 FILE( COPY "assets/" DESTINATION "${CMAKE_BINARY_DIR}" )
-
-# gtest, added as a subproject
-ADD_SUBDIRECTORY( vendor/googletest )
 
 ADD_SUBDIRECTORY(lesson-01)
 ADD_SUBDIRECTORY(lesson-02)

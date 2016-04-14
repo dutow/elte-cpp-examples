@@ -71,7 +71,7 @@ A rekurziv opcio csak akkor szukseges, ha az extrakat is szeretned. Amennyiben i
 
 ### Opcionalis: forditsd le a kulso konyvtarakat
 
-Amennyiben szeretned az extrakat, szukseged van a boost (altalanos C++ osztalyok/fuggvenyek gyujtemenye) egy reszere, valamint az SFML nevu grafikus csomagra. Ezeket a pltaformodtol fuggoen a `boostrap.sh`, vagy `bootstrap.bat` futtatasaval tudod leforditani.
+Amennyiben szeretned az extrakat, szukseged van a boost (altalanos C++ osztalyok/fuggvenyek gyujtemenye) egy reszere. Ezt a plataformodtol fuggoen a `build_boost.sh`, vagy `build_boost.bat` futtatasaval tudod leforditani.
 
 Csak egyszer kell megtenned.
 
