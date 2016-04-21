@@ -1,0 +1,8 @@
+
+MODIFY_SCOPE(lesson-07)
+
+ADD_SUBDIRECTORY(1-sets)
+ADD_SUBDIRECTORY(2-maps)
+ADD_SUBDIRECTORY(3-algorithm)
+
+

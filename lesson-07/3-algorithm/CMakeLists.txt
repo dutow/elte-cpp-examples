@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( 3-algorithm )
+
+BUILD_EXECUTABLE ()

@@ -1,0 +1,6 @@
+
+MODIFY_SCOPE(lesson-09)
+
+ADD_SUBDIRECTORY(1-bimap)
+
+

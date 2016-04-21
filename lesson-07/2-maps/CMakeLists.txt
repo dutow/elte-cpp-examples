@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( 2-maps )
+
+BUILD_EXECUTABLE ()

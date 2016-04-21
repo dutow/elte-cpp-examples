@@ -1,0 +1,4 @@
+
+MODIFY_SCOPE ( 1-bimap )
+
+BUILD_EXECUTABLE ()
